@@ -1,17 +1,26 @@
+
+
 # 1. 变量与数据类型
 
-## 变量
+## 变量 (variable)
 
-- 变量是用来存储数据的容器。
-- Python 变量不需要声明类型。
+- **变量是用来存储数据的容器。**
+   A variable is a container for storing data.
+- **Python 变量不需要声明类型。**
+   Python variables do not require type declarations.
 
 在 Python 中，`所有的数据都是对象`。
+ In Python, **all data is an object**.
 
-变量实际上是对对象的引用，而不是直接存储数据的容器。每个对象都有一个类型信息和引用计数，Python 解释器使用这些信息来管理内存和执行操作。
+变量实际上是对对象的引用，而不是直接存储数据的容器。
+ A variable is actually a reference to an object, not a direct storage container for data.
 
-```py
-x = 5
-y = "Hello"
+每个对象都有一个类型信息和引用计数，Python 解释器使用这些信息来管理内存和执行操作。
+ Each object has type information and reference counting, and the Python interpreter uses this information to manage memory and perform operations.
+
+```python
+x = 5   # x refers to an integer object with value 5
+y = "Hello"  # y refers to a string object with value "Hello"
 ```
 
 ## 数据类型
@@ -29,7 +38,7 @@ Python有`6个`标准的数据类型：
 
 
 
-## 可变与否
+# 可变与否
 
 可变
 
