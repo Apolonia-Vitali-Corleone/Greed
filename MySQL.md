@@ -286,6 +286,33 @@ SELECT * FROM employees WHERE department = 'HR' AND age > 30;
 
 ### 7.ORDER BY
 
+#### 1 order by 数字
+
+假设有如下表格 `employees`：
+
+| id   | name    | age  | department | salary | join_date  | location      | role      | experience | performance |
+| ---- | ------- | ---- | ---------- | ------ | ---------- | ------------- | --------- | ---------- | ----------- |
+| 1    | Alice   | 30   | HR         | 5000   | 2020-01-01 | New York      | Manager   | 5          | Excellent   |
+| 2    | Bob     | 25   | IT         | 4500   | 2021-05-15 | San Francisco | Developer | 3          | Good        |
+| 3    | Charlie | 35   | Marketing  | 6000   | 2019-11-01 | Chicago       | Director  | 7          | Excellent   |
+
+如果你执行以下查询：
+
+```sql
+SELECT id, name, age, department, salary, join_date, location, role, experience, performance
+FROM employees
+ORDER BY 10;
+```
+
+- `ORDER BY 10` 会按照 **`performance`** 列（第 10 列）进行排序。
+- 这将按照 `performance` 列的值排序。
+
+
+
+---
+
+
+
 我的说明
 
 注意第一个排序后，第二个排序是在第一个的基础之上再进行排序
